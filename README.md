@@ -1,70 +1,297 @@
-# Getting Started with Create React App
+# 🚀 WorkIntel — Employee Productivity & Work Tracking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WorkIntel is a modern full-stack Employee Productivity Management System built for tracking daily work efforts, leave management, reporting, approvals, notifications, and productivity analytics.
 
-## Available Scripts
+Designed with a premium dark SaaS UI and powered by ASP.NET Core + React.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🌐 Live Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ JWT Authentication  
+✅ Role-Based Access  
+✅ Daily Effort Tracking  
+✅ Leave Management  
+✅ Approval Workflow  
+✅ Dashboard Analytics  
+✅ Real-time Notifications  
+✅ Excel Report Export  
+✅ Holiday Management  
+✅ Email Reminder System  
+✅ Profile Update Requests  
+✅ Hangfire Background Jobs  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 👨‍💼 Roles & Permissions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 👤 Employee
 
-### `npm run build`
+- Add Daily Efforts
+- View My Efforts
+- Apply Leave
+- View Notifications
+- Request Profile Update
+- Dashboard Analytics
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 👨‍💻 Manager
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Everything from Employee +
 
-### `npm run eject`
+- Approve / Reject Leaves
+- View Team Reports
+- Export Excel Reports
+- Holiday Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛡️ Admin
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Everything from Manager +
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- User Approval
+- Profile Update Approval
+- Full System Access
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 📊 Dashboard Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Total Working Hours
+- Ticket Analytics
+- Daily Productivity Trends
+- Effort Type Distribution
+- Notification Center
+- Real-time Refresh
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 📧 Email Features
 
-### Analyzing the Bundle Size
+- Daily Reminder Emails
+- Leave Approval Emails
+- Leave Rejection Emails
+- Forgot Password Emails
+- Holiday Announcement Emails
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+# 🛠️ Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔹 Frontend
 
-### Advanced Configuration
+- React.js
+- React Router DOM
+- Axios
+- Tailwind CSS
+- Recharts
+- React Hot Toast
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔹 Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- JWT Authentication
+- Hangfire
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 🔐 Authentication & Security
+
+- JWT Access Tokens
+- Role-Based Authorization
+- Protected Routes
+- API Authorization Policies
+- Secure Password Reset Flow
+
+---
+
+# 📸 Screenshots
+
+## 🔐 Login Page
+
+![Login Page](./Screenshots/WorkIntel_Login_Page.png)
+
+---
+
+## 📊 Dashboard
+
+![Dashboard](./Screenshots/WorkIntel_Main_Page1.png)
+
+---
+
+# 📂 Project Structure
+
+## Frontend
+
+```bash
+src/
+ ├── api/
+ ├── components/
+ ├── layouts/
+ ├── pages/
+ ├── routes/
+ ├── services/
+ └── utils/
+```
+
+---
+
+## Backend
+
+```bash
+EmployeeProductivitySystem/
+ ├── API/
+ ├── Application/
+ ├── Domain/
+ ├── Infrastructure/
+```
+
+---
+
+# ⚙️ Installation
+
+# 🔹 Frontend Setup
+
+```bash
+npm install
+npm start
+```
+
+Frontend runs on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🔹 Backend Setup
+
+```bash
+dotnet restore
+dotnet run
+```
+
+Backend Swagger:
+
+```bash
+https://localhost:5001/swagger
+```
+
+---
+
+# 🗄️ Database
+
+Database Used:
+
+```text
+SQL Server
+```
+
+Update connection string in:
+
+```bash
+appsettings.json
+```
+
+Run migrations:
+
+```bash
+dotnet ef database update
+```
+
+---
+
+# 📈 API Modules
+
+## Authentication
+
+- Login
+- Register
+- Forgot Password
+- Reset Password
+
+---
+
+## Effort Management
+
+- Add Effort
+- Update Effort
+- Delete Effort
+- Effort Summary
+
+---
+
+## Leave Management
+
+- Apply Leave
+- Approve / Reject Leave
+
+---
+
+## Reports
+
+- Generate Reports
+- Export Excel
+
+---
+
+## Notifications
+
+- Reminder Notifications
+- Daily Alerts
+
+---
+
+# 🚀 Deployment
+
+## Frontend
+
+- Azure Static Web Apps
+- Vercel
+
+---
+
+## Backend
+
+- Azure App Service
+
+---
+
+## Database
+
+- Azure SQL Database
+
+---
+
+# 💡 Future Improvements
+
+- WebSocket Real-time Updates
+- Mobile Responsive Enhancements
+- Team Analytics
+- Attendance Integration
+- AI Productivity Insights
+
+---
+
+# 👨‍💻 Developed By
+
+## Rohit Singh
+
+Full Stack Developer  
+ASP.NET Core | React.js | SQL Server
+
+GitHub:
+https://github.com/Rohit41342
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub.
